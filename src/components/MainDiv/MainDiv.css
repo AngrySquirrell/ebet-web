@@ -1,0 +1,60 @@
+.mainDivLeft{
+    width:480px;
+    height:480px;
+    margin-top: 72px;
+    margin-bottom: 56px;
+}
+.mainDivRightTop{
+    width:560px;
+    height: 190px;
+    margin-top: 08px;
+    margin-bottom: 48px;
+}
+.mainDivRightBottom{
+    width:560px;
+    height:240px;
+
+}
+.title{
+    font-size:2vw;
+    font-weight:bold;
+    color:white;
+    text-align:center;
+}
+.more{
+    font-size:1.2vw;
+    font-weight:bold;
+    color:white;
+    text-align:end;
+    padding-right: 12px;
+    
+}
+.contentLeft{
+    height: 80%;
+    width: 80%;
+}
+.contentRight{
+    height: 80%;
+    width: 80%;
+}
+.link{
+    text-decoration:none;
+    color:rgb(139, 139, 139);
+}
+.link:hover{
+    text-decoration:underline;
+    color:#EEE;
+    transition-duration: .25s;
+}
+.chevron{
+    color:rgb(139, 139, 139);
+    padding-left:8px;
+}
+.circle{
+    color:red;
+    padding-right:4px;
+    width: 24px;
+    height: 24px;
+    justify-self: center;
+    align-self: center;
+}

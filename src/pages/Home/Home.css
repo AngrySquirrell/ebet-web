@@ -1,0 +1,19 @@
+.box{
+    background-color: #424e80;
+    border-radius: 8px;
+}
+.boxes{
+    display: flex;
+}
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

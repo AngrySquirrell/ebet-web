@@ -1,0 +1,82 @@
+.navbar{
+    background-color: #3d404d;
+    width: 100%;
+    height: 48px;
+    display:flex;
+    position: fixed;
+    top: 0;
+}
+
+.Left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.LeftButtons{
+    margin-left: 3%;
+    height: 75%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: rgb(139, 139, 139);
+    text-decoration: none;
+}
+
+.LeftButtons:hover{
+    transition-duration: .25s;
+    text-decoration: underline;
+    font-weight: bold;
+    color:#EEE;
+    cursor: pointer;
+}
+
+.Right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.RightSide{
+    margin-right: 3%;
+    height: 75%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: rgb(139, 139, 139);
+    text-decoration: none;
+    background-color: #3d404d;
+}
+
+.RightButtons{
+    margin-right: 5%;
+    height: 75%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: rgb(139, 139, 139);
+    text-decoration: none;
+}
+
+.RightButtons:hover{
+    transition-duration: .25s;
+    background-color: #b6b6b6;
+    color:#EEE;
+    cursor: pointer;
+}
+
+.Selected{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #EEE;
+}
