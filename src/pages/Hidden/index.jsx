@@ -9,7 +9,6 @@ const Hidden = () => {
         <div>
             <div className='hidden'>
                 <Navbar current={`Hidden`} />
-
                 <div>
                     <img src='https://i.imgur.com/eS7RU1j.png' alt='Easter Egg' />
                 </div>
