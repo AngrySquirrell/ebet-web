@@ -1,19 +1,16 @@
 .mainDivLeft{
-    width:480px;
-    height:480px;
-    margin-top: 72px;
-    margin-bottom: 56px;
+    width:640px;
+    height:80%;
 }
 .mainDivRightTop{
-    width:560px;
-    height: 190px;
-    margin-top: 08px;
+    width:600px;
+    height: 40vh;
+    margin-top: 16px;
     margin-bottom: 48px;
 }
 .mainDivRightBottom{
-    width:560px;
-    height:240px;
-
+    width:600px;
+    height:40vh;
 }
 .title{
     font-size:2vw;
@@ -25,17 +22,10 @@
     font-size:1.2vw;
     font-weight:bold;
     color:white;
-    text-align:end;
+    display:flex;
+    justify-content:end;
+    align-items:center;
     padding-right: 12px;
-    
-}
-.contentLeft{
-    height: 80%;
-    width: 80%;
-}
-.contentRight{
-    height: 80%;
-    width: 80%;
 }
 .link{
     text-decoration:none;

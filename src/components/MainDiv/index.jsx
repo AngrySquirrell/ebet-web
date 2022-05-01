@@ -7,21 +7,24 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const MainDiv = (props) => {
     const { pos } = props
-
+    
     function defPos(pos){
-        if(pos === 'right'){
-            return 'mainDivLeft'
+        switch(pos){
+            case 'right':
+                return 'mainDivLeft';
+            case 'l-top':
+                return 'mainDivRightTop';
+            case 'l-bottom':
+                return 'mainDivRightBottom';
         }
-        else if(pos === 'l-top'){
-            return 'mainDivRightTop'
-        }
-        else if(pos === 'l-bottom'){
-            return 'mainDivRightBottom'
-        }
+
     }
     function defContent(pos){
         if(pos === 'right'){
+
             return (
+
+
             <div>
                 <div className='title'>
                     <FontAwesomeIcon icon={faCircle} className='circle'/>
@@ -35,9 +38,13 @@ const MainDiv = (props) => {
                     <FontAwesomeIcon icon={faChevronRight} className='chevron'/>
                 </div>
             </div>
+
+
             )
+
         }
         else if(pos === 'l-top'){
+
             return (
             <div>
                 <div className='title'>
@@ -52,8 +59,10 @@ const MainDiv = (props) => {
                 </div>
             </div>
             )
+
         }
         else if(pos === 'l-bottom'){
+
             return (
             <div>
                 <div className='title'>
@@ -68,6 +77,7 @@ const MainDiv = (props) => {
                 </div>
             </div>
             )
+
         }
     }
 

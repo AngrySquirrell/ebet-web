@@ -7,9 +7,11 @@ import Footer from '../../components/Footer';
 
 const Upcomming = () => {
     return (
-            <div className='Upcomming'>
+            <div className='upcomming'>
                 <Navbar current={`Upcomming`}/>
-                Upcomming
+                <div className='contentUpcomming'>
+                    Upcomming
+                </div>
                 <Footer />
             </div>
     )

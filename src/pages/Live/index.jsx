@@ -9,7 +9,9 @@ const Live = () => {
     return (
             <div className='live'>
                 <Navbar current={`Live`}/>
-                Live
+                <div className='contentLive'>
+                    Live
+                </div>
                 <Footer />
             </div>
     )

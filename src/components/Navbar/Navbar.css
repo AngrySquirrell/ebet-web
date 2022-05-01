@@ -6,7 +6,6 @@
     position: fixed;
     top: 0;
 }
-
 .Left{
     width: 50%;
     height: 100%;
@@ -14,9 +13,7 @@
     justify-content: flex-start;
     align-items: center;
 }
-
 .LeftButtons{
-    margin-left: 3%;
     height: 75%;
     width: 120px;
     display: flex;
@@ -26,7 +23,6 @@
     color: rgb(139, 139, 139);
     text-decoration: none;
 }
-
 .LeftButtons:hover{
     transition-duration: .25s;
     text-decoration: underline;
@@ -34,7 +30,6 @@
     color:#EEE;
     cursor: pointer;
 }
-
 .Right{
     width: 50%;
     height: 100%;
@@ -42,7 +37,6 @@
     justify-content: flex-end;
     align-items: center;
 }
-
 .RightSide{
     margin-right: 3%;
     height: 75%;
@@ -53,7 +47,6 @@
     border-radius: 8px;
     color: rgb(139, 139, 139);
     text-decoration: none;
-    background-color: #3d404d;
 }
 
 .RightButtons{
@@ -79,4 +72,37 @@
     text-decoration: underline;
     font-weight: bold;
     color: #EEE;
+}
+
+.coin{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    color: #EEE;
+}
+.logo{
+padding-left: 16px;
+display: flex;
+}
+.logoName{
+    padding-left:4px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #EEE;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.separator{
+    width: 1px;
+    height: 32px;
+    background-color: #EEE;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: #272931;
+    margin-left: 32px;
 }

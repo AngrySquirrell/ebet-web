@@ -2,9 +2,6 @@
     background-color: #424e80;
     border-radius: 8px;
 }
-.boxes{
-    display: flex;
-}
 .horizontal{
     display: flex;
     flex-direction: row;
@@ -16,4 +13,18 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: space-between;
+}
+.boxes{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
 }
