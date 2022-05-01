@@ -1,1 +1,3 @@
-React rooter-dom : npm install --save react-router-dom
+React rooter-dom : npm i --save react-router-dom
+Axios api calls : npm i axios@0.26.1
+Git clone : git clone https://github.com/AngrySquirrell/ebet-web
