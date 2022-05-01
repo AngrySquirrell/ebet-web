@@ -16,8 +16,10 @@ const MainDiv = (props) => {
                 return 'mainDivRightTop';
             case 'l-bottom':
                 return 'mainDivRightBottom';
+            default:
+                console.log('error');
+                return '';
         }
-
     }
     function defContent(pos){
         if(pos === 'right'){
