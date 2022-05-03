@@ -1,3 +1,4 @@
 React rooter-dom : npm i --save react-router-dom
 Axios api calls : npm i axios@0.26.1
+Query Strings : npm i query-string
 Git clone : git clone https://github.com/AngrySquirrell/ebet-web
