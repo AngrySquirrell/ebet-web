@@ -1,0 +1,21 @@
+.horizontalSeparator{
+    width: 80%;
+    height: 1px;
+    background-color: #747474;
+    margin-left:10%;
+}
+.contentLive{
+    width:100%;
+    height:60px;
+    color: #EEE;
+}
+.contentLiveLink{
+    text-decoration:none;
+    color: #EEE;
+    font-size:1.2vw;
+    font-weight:bold;
+    padding-left:8px;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+}

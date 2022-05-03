@@ -1,63 +1,43 @@
 import './MainDiv.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 
 const MainDiv = (props) => {
-    const { pos } = props
-    
-    function defPos(pos){
-        switch(pos){
-            case 'right':
-                return 'mainDivLeft';
-            case 'l-top':
-                return 'mainDivRightTop';
-            case 'l-bottom':
-                return 'mainDivRightBottom';
-            default:
-                console.log('error');
-                return '';
-        }
-    }
+    const { pos, content } = props
+
     function defContent(pos){
         if(pos === 'right'){
 
             return (
-
-
             <div>
                 <div className='title'>
                     <FontAwesomeIcon icon={faCircle} className='circle'/>
                     Live
                 </div>
                 <div className='contentLeft'>
-                    content
-                </div>
-                <div className='more'>
-                    <Link to='/live' className='link'>More</Link>
-                    <FontAwesomeIcon icon={faChevronRight} className='chevron'/>
+                {
+                content.map(element => (
+                    <div className='contentLive'>
+                        {element}
+                    </div>
+                ))
+                }
                 </div>
             </div>
-
 
             )
 
         }
         else if(pos === 'l-top'){
-
             return (
             <div>
                 <div className='title'>
                     Upcomming
                 </div>
                 <div className='contentRight'>
-                    content
-                </div>
-                <div className='more'>
-                    <Link to='/live' className='link'>More</Link>
-                    <FontAwesomeIcon icon={faChevronRight} className='chevron'/>
                 </div>
             </div>
             )
@@ -73,10 +53,6 @@ const MainDiv = (props) => {
                 <div className='contentRight'>
                     content
                 </div>
-                <div className='more'>
-                    <Link to='/live' className='link'>More</Link>
-                    <FontAwesomeIcon icon={faChevronRight} className='chevron'/>
-                </div>
             </div>
             )
 
@@ -86,7 +62,7 @@ const MainDiv = (props) => {
     
     return (
         <div className='boxes'>
-            <div className={`box ${defPos(pos)}`}>
+            <div className={`box ${''}`}>
                 { defContent(pos) }
             </div>
         </div>
