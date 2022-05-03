@@ -1,0 +1,6 @@
+.contentLivePage{
+    width:100hv;
+    height:calc(100vh - 48px);
+    margin-top:48px;
+    color:white;
+}

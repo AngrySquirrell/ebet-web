@@ -3,6 +3,7 @@
     height: 1px;
     background-color: #747474;
     margin-left:10%;
+    bottom:0;
 }
 .contentLive{
     width:100%;
@@ -18,4 +19,6 @@
     display: flex;
     justify-content:flex-start;
     align-items:center;
+    height:100%;
+    width: 100%;
 }

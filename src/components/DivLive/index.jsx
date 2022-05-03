@@ -18,18 +18,22 @@ const DivLive = (props) => {
             })
     }, [])
 
-    function generateLinks(live) {
-        for(let i = 0; i < 8; i++){
-            return (
-            <div className='contentLive'>
-                <Link to={`/live`} className={`contentLiveLink`}>
-                    {live[i]}
-                </Link>
-                <div className='horizontalSeparator'></div>
-            </div>
-        )
+    function generateLinks(arr) {
+        arr.forEach((element,index) => {
+            console.log(element)
+            if (index < 8) {
+                return (
+                    <div className='contentLive'>
+                        <Link to={`/live`} className={`contentLiveLink`}>
+                            {'zob'}
+                        </Link>
+                        <div className='horizontalSeparator'></div>
+                    </div>
+                )
+            }
+            else return null 
+        })
     }
-}
 
     return (
         <div className='boxes'>
@@ -39,7 +43,7 @@ const DivLive = (props) => {
                         Live
                     </div>
                     <div className='contentLeft'>
-                        { generateLinks(live) }
+                        {generateLinks(live)}
                     </div>
             </div>
         </div>

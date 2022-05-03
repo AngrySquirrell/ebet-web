@@ -9,11 +9,15 @@
     align-items: center;
 }
 
-@media (max-width: 1280px) {
+/* @media (max-width: 1280px) {
     .horizontal {
         flex-direction: column;
     }
-  }
+    .contentLive{
+        top:0;
+
+    }
+  } */
 
 .vertical{
     display: flex;
@@ -22,8 +26,9 @@
     align-items: center;
 }
 .home{
-    height: 100vh;
+    height: calc( 100vh - 48px );
     width: 100%;
+    padding-top: 48px;
     display:flex;
     justify-content: space-around;
     align-items: space-between;

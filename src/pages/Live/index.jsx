@@ -8,9 +8,9 @@ const Live = () => {
     return (
             <div className='live'>
                 <Navbar current={`Live`}/>
-                <div className='contentLive'>
-                    Live
-                </div>
+                    <div className='contentLivePage'>
+                        Live
+                    </div>
                 <Footer />
             </div>
     )
