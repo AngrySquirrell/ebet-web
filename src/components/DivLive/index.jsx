@@ -16,6 +16,7 @@ const DivLive = (props) => {
             .then(res => {
                 SetLive(res.data)
             })
+        console.clear()
     }, [])
 
     return (
@@ -27,8 +28,10 @@ const DivLive = (props) => {
                     </div>
                     <div className='contentLeft'>
                         {
-                        live.forEach((element,index) => {
+                        live.map((element,index) => {
                             if (index < 8) {
+                                console.log(`Index : ${index}`)
+                                console.log(`Element : ${element}`)
                                 return (
                                     <div className='contentLive'>
                                         <Link to={`/live?sport=${element}`} className={`contentLiveLink`}>
@@ -37,7 +40,7 @@ const DivLive = (props) => {
                                         <div className='horizontalSeparator'></div>
                                     </div>
                                 )}
-                                // else return (<div className='contentLive'>Empty</div>)
+                                else return (<div className='contentLive'>Empty</div>)
                             })
                         }
                     </div>
