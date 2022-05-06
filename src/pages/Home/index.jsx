@@ -5,6 +5,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import DivLive from '../../components/DivLive';
+import DivLeaderboard from '../../components/DivLeaderboard';
 
 const Home = () => {
     return (
@@ -21,20 +22,7 @@ const Home = () => {
 
                                         {/* Upcomming */}
 
-                        <div className='responsiveHome'>
-                            <div className='boxes'>
-                                <div className={`box ${'mainDivRightTop'}`}>
-                                    <div>
-                                        <div className='title'>
-                                            Upcomming
-                                        </div>
-                                        <div className='contentRight'>
-                                            content
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <DivLeaderboard pos='mainDivRightTop' className={`responsiveHome`} />
 
                                         {/* Leaderboard */}
 

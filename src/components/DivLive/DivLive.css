@@ -1,8 +1,10 @@
-.horizontalSeparator{
+.horizontalSeparatorLive{
     width: 80%;
     height: 1px;
     background-color: #747474;
-    margin-left:10%;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
     bottom:0;
 }
 .contentLive{
@@ -15,10 +17,48 @@
     color: #EEE;
     font-size:1.2vw;
     font-weight:bold;
-    padding-left:8px;
     display: flex;
     justify-content:flex-start;
     align-items:center;
     height:100%;
     width: 100%;
+}
+.contentLiveLink:hover{
+    border-radius: 12px;
+    background-color: rgba(238, 238, 238, 0.247);
+}
+.sportDiv{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.sportIcon{
+    width:24px;
+    height:24px;
+    padding-right:20px;
+    padding-left:8px;
+}
+.sportsAmount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #747474;
+    height: 32px;
+    width: 64px;
+    margin-top: 20px;
+}
+.sportsAmount:hover{
+    background-color: rgba(238, 238, 238, 0.247);
+    transition-duration: .5s;
+}
+.chevronRight{
+    color:rgb(139, 139, 139);
+    padding-left:8px;
+}
+.sportsLiveContent{
+    display:flex;
+}
+.sportsName{
+    width: 480px;
 }
