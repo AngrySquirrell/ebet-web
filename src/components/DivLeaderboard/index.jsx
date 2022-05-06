@@ -1,10 +1,6 @@
 import './DivLeaderboard.css';
 import { React, useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faFutbol, faTableTennis, faBasketball, faPersonRifle, faFootball, faBan, faBaseball } from '@fortawesome/free-solid-svg-icons';
 
 const DivLeaderboard = (props) => {
     const {pos} = props
