@@ -47,7 +47,7 @@ const DivLive = (props) => {
             case 'tennis':
                 return (
                     <div className='sportDiv'>
-                        <img src='https://i.imgur.com/k6vcguB.png' className='sportIcon'/>
+                        <img src='https://i.imgur.com/k6vcguB.png' alt="tennis ball"className='sportIcon'/>
                         <div className='sportsLiveContent'>
                             <p className='sportsName'>Tennis</p>
                             <div className='sportsAmount'>{amount} <FontAwesomeIcon icon={faChevronRight} className="chevronRight"/> </div>
@@ -67,7 +67,7 @@ const DivLive = (props) => {
             case 'cricket':
                 return (
                     <div className='sportDiv'>
-                        <img src='https://i.imgur.com/YlV3fRF.png' className='sportIcon'/>
+                        <img src='https://i.imgur.com/YlV3fRF.png' alt="cricket" className='sportIcon'/>
                         <div className='sportsLiveContent'>
                             <p className='sportsName'>Cricket</p>
                             <div className='sportsAmount'>{amount} <FontAwesomeIcon icon={faChevronRight} className="chevronRight"/> </div>
@@ -107,7 +107,7 @@ const DivLive = (props) => {
             case 'badminton':
                 return (
                     <div className='sportDiv'>
-                        <img src='https://i.imgur.com/4zlTrjv.png' className='sportIcon'/>
+                        <img src='https://i.imgur.com/4zlTrjv.png' alt="badminton" className='sportIcon'/>
                         <div className='sportsLiveContent'>
                             <p className='sportsName'>Badminton</p>
                             <div className='sportsAmount'>{amount} <FontAwesomeIcon icon={faChevronRight} className="chevronRight"/> </div>
@@ -117,7 +117,7 @@ const DivLive = (props) => {
             case 'dota-2':
                 return (
                     <div className='sportDiv'>
-                        <img src='https://i.imgur.com/MZpsR2Z.png' className='sportIcon'/>
+                        <img src='https://i.imgur.com/MZpsR2Z.png' alt="dota2" className='sportIcon'/>
                         <div className='sportsLiveContent'>
                             <p className='sportsName'>Dota 2</p>
                             <div className='sportsAmount'>{amount} <FontAwesomeIcon icon={faChevronRight} className="chevronRight"/> </div>

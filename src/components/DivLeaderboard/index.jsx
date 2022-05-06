@@ -43,6 +43,7 @@ const DivLeaderboard = (props) => {
                                     </div>
                                 </div>
                             )}
+                            else return ""
                         })
                     }
                 </div>
