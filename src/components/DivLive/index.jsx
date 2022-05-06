@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faFutbol,  } from '@fortawesome/free-solid-svg-icons';
 
 const DivLive = (props) => {
     const {pos} = props
@@ -16,8 +16,23 @@ const DivLive = (props) => {
             .then(res => {
                 SetLive(res.data)
             })
+            .catch(err => {
+                console.log(err);
+            })
         console.clear()
     }, [])
+
+    const madeDivName = (name) => {
+        switch (name) {
+            case 'soccer':
+                return (
+                    <div className='soccer'>
+                        <FontAwesomeIcon icon={faFutbol} />
+                        <p className=''>Soccer</p>
+                    </div>
+                )
+        }
+    }
 
     return (
         <div className='boxes'>
@@ -48,4 +63,5 @@ const DivLive = (props) => {
         </div>
     )
 }
+
 export default DivLive;

@@ -1,4 +1,6 @@
 React rooter-dom : npm i --save react-router-dom
 Axios api calls : npm i axios@0.26.1
 Query Strings : npm i query-string
+Firebase SDK : npm i firebase
+Firebase CLI : npm install -g firebase-tools
 Git clone : git clone https://github.com/AngrySquirrell/ebet-web
