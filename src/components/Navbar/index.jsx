@@ -17,6 +17,7 @@ const Navbar = (props) => {
                 <Link to='/' className={`LeftButtons ${(current==='Home')? 'Selected':''}`}>Home</Link>
                 <Link to='/upcomming' className={`LeftButtons ${(current==='Upcomming')? 'Selected':''}`}>Upcomming</Link>
                 <Link to='/live' className={`LeftButtons ${(current==='Live')? 'Selected':''}`}>Live</Link>
+                <Link to='/leadoard' className={`LeftButtons ${(current==='Live')? 'Selected':''}`}>Leaderboard</Link>
             </div>
             <div className='Right'>
                 <div className='RightSide'>

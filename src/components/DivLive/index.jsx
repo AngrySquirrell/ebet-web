@@ -171,7 +171,7 @@ const DivLive = (props) => {
                                 console.log(live);
                                 return (
                                     <div className='contentLive'>
-                                        <Link to={`/live?sport=${element}`} className={`contentLiveLink`}>
+                                        <Link to={`/live?sport=${element[0]}`} className={`contentLiveLink`}>
                                             {madeDivName(element[0], element[1])}
                                         </Link>
                                         <div className='horizontalSeparatorLive'/>

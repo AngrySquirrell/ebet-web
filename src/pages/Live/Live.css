@@ -4,3 +4,107 @@
     margin-top:48px;
     color:white;
 }
+.selectSportBar{
+    width:100%;
+    height:64px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-top:8px;
+}
+.sportDivLive{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height : 48px;
+    width:100%;
+    text-size-adjust: none;
+    margin-left:12px;
+    border-radius:8px;
+    background-color:#606fac60;
+}
+.sportsLiveContentLive{
+    display: flex;
+}
+.sportsAmountLive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:8px;
+}
+.sportsNameLive{
+    margin:0;
+    text-size-adjust: none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:128px;
+}
+.selectSportBar{
+    overflow-x: auto;
+}
+.sportIconLive{
+    width:20px;
+    height:20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    width: 4px;
+    background: gray;
+    border-radius: 2px;
+}
+.SelectedSport{
+    color:#ea9550;
+}
+.sportLiveButtons{
+    color:white;
+    text-decoration: none;
+    margin-left:8px;
+    width:196px;
+}
+
+
+.containerContentLive{
+    width:100%;
+    height:calc(100% - 64px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.containerContainingMatches{
+    width:90%;
+    height:90%;
+    border-radius: 16px;
+    background-color: black;
+    overflow-y: scroll;
+    min-width: 90%;
+}
+.match{
+    width:90%;
+    height:96px;
+    margin-top:12px;
+    border-radius: 8px;
+    background-color: #606fac60;
+    margin-left:calc(10% / 2);
+}
+.match-players{
+    display: flex;
+    justify-content: space-between;
+}
+.player{
+    margin-left:8px;
+    margin-right:8px;
+}
+.match-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

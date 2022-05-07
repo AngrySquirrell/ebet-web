@@ -22,7 +22,7 @@ const Home = () => {
 
                                         {/* Upcomming */}
 
-                    <DivLeaderboard pos='mainDivRightTop' className={`responsiveHome`} />
+                        <DivLeaderboard pos='mainDivRightTop' className={`responsiveHome`} />
 
                                         {/* Leaderboard */}
 

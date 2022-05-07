@@ -1,5 +1,5 @@
 .box{
-    background-color: #424e80;
+    background-color: #606fac;
     border-radius: 8px;
 }
 .horizontal{
@@ -7,6 +7,10 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.all::-webkit-scrollbar{
+    display: none;
 }
 
 /* @media (max-width: 1280px) {

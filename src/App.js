@@ -13,6 +13,7 @@ import Hidden from './pages/Hidden';
 import Test from './pages/Test';
 import Login from './pages/Authentification/Login';
 import Signup from './pages/Authentification/Signup';
+import Leaderboard from './pages/Leaderboard';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       <Route path='/upcomming' element={<Upcomming />}/>
       <Route path='/live' element={<Live />}/>
       <Route path='/test' element={<Test />}/>
-
+      <Route path='/leaderboard' element={<Leaderboard />}/>
+      <Route path='/hidden' element={<Hidden />}/>
 
       <Route path='/login' element={<Login />}/>
       <Route path='/signup' element={<Signup />}/>
