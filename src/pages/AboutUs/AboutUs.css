@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.GithubIconAboutUs{
+    width: 24px;
+    height: 24px;
+}
+
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.aboutUs{
+    margin-top:48px;
+    height:calc(100vh - 48px);
+    font-family: 'Anonymous Pro', monospace;
+}
+.titleAboutUs{
+    font-size:64px;
+    font-weight:bold;
+    color:orangered;
+    top:5%;
+    left:-20%;
+    height:64px;
+    width:100%;
+}
+.titleAboutUs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left:128px;
+    height:48px;
+}
+.contentAboutUs{
+    display: flex;
+    color: #3d5589;
+    margin-left : 16px;
+    margin-top:12px;
+    margin-bottom: 12px;
+}
+.contentDo{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.contentP{
+    margin-top:0;
+}
+.content1{
+    width: 256px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 16px;
+}
+.oui{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

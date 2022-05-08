@@ -1,0 +1,65 @@
+.leaderboardContent {
+    margin-top: 48px;
+    width: 100%;
+    height: calc(100vh - 48px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leaderboardDiv {
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    border-radius: 10px;
+}
+.leaderboardDivContent{
+    overflow-y: scroll;
+    height: 85%;
+}
+.leaderboardTitle{
+    font-size: 24px;
+    color : white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:64px;
+}
+.leaderboardDivPlace{
+    padding-left: 8px;
+    width:144px;
+    height:100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leaderboardDivUsername{
+    width:144px;
+    height:100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leaderboardDivDate{
+    width:172px;
+    height:100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leaderboardDivScore{
+    width:144px;
+    height:100%;
+    padding-right: 8px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.verticalSeparatorLeaderboard{
+    width: 1px;
+    height: 100%;
+    background-color: white;
+}

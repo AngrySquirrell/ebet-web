@@ -5,6 +5,31 @@
     display:flex;
     position: relative;
     bottom: 0;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerSpecialText{
+    width:40%
+}
+.footerLiensAboutUs{
+    width: 96px;
+    height: 48px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #3d5589;
+}
+.footerLiensAboutUs:hover{
+    background-color: #3d558960;
+    color: #fff;
+}
+.footerLiens{
+    width:40%;
+    display:flex;
+    justify-content: center;
     align-items: center;
 }

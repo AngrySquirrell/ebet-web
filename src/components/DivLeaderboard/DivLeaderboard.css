@@ -25,6 +25,9 @@
 .place{
     font-size:32px;
     font-weight:bold;
+    width:64px;
+    display:flex;
+    justify-content:center;
 }
 .username{
     font-size:16px;

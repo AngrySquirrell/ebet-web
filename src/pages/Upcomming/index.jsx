@@ -12,11 +12,11 @@ import Footer from '../../components/Footer';
 
 const Upcomming = () => {
 
+    const [upcomming, SetUpcomming] = useState([])
     const [matchsData, setMatchsData] = useState({ name: [], players: [], odds: [] });
     const config = {
         headers: {
             "Access-Control-Allow-Origin": "*",
-            'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8;application/json'
         } 
     }
 
@@ -59,7 +59,7 @@ const Upcomming = () => {
         // Traitement de Live
         axios.get(`http://109.205.56.69:4000/livecount`, config)
             .then(res => {
-                //SetLive(res.data.sportList.map(element => [element.slug, element.fixtureCount]))
+                SetUpcomming(res.data.sportList.map(element => [element.slug, element.fixtureCount]))
             })
             .catch(err => {
                 console.log(err);
@@ -68,11 +68,12 @@ const Upcomming = () => {
         console.clear()
         console.log(getQueryVariable('sport'))
         if (selected !== false) { getTournamentList(selected) }
-        
+        console.log(upcomming)
     }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     const makeDivNameUpcomming = (name, amount, selectedSport) => {
         switch (name) {
+            case null: return '';
             case 'soccer':
                 return (
                     <div className='sportDivLive'>
@@ -205,8 +206,7 @@ const Upcomming = () => {
                 )
         }
     }
-    makeDivNameUpcomming(null, null, null)
-    getTournamentList(null)
+    console.log(makeDivNameUpcomming(null))
     return (
         <div className='live'>
             <Navbar current={`Upcomming`} />
@@ -217,7 +217,7 @@ const Upcomming = () => {
                 </div>
                     {/* <div className='selectSportBar'>
                     {
-                        live.map(element => {
+                        upcomming.map(element => {
                             return (
                                 <Link className='sportLiveButtons' to={`/upcomming?sport=${element[0]}`} onClick={() => getTournamentList(element[0])}>
                                     {makeDivNameUpcomming(element[0], element[1], selected)}
@@ -247,8 +247,8 @@ const Upcomming = () => {
                                 </div>
                             )
                         }
-                        )}
-                    </div>
+                        )} */}
+                    {/* </div>
                 </div> */}
                 </div>
 

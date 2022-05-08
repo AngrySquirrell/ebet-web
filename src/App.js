@@ -14,6 +14,7 @@ import Test from './pages/Test';
 import Login from './pages/Authentification/Login';
 import Signup from './pages/Authentification/Signup';
 import Leaderboard from './pages/Leaderboard';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path='/test' element={<Test />}/>
       <Route path='/leaderboard' element={<Leaderboard />}/>
       <Route path='/hidden' element={<Hidden />}/>
+      <Route path='/aboutus' element={<AboutUs />}/>
 
       <Route path='/login' element={<Login />}/>
       <Route path='/signup' element={<Signup />}/>

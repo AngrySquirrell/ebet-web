@@ -20,21 +20,21 @@ const Home = () => {
 
                     <div className='vertical'>
 
-                                        {/* Upcomming */}
+                                        {/* Leaderboard */}
 
                         <DivLeaderboard pos='mainDivRightTop' className={`responsiveHome`} />
 
-                                        {/* Leaderboard */}
+                                        {/* Upcomming */}
 
                         <div className='responsiveHome'>
                             <div className='boxes'>
                                 <div className={`box ${'mainDivRightBottom'}`}>
                                     <div>
                                         <div className='title'>
-                                            Leaderboard
+                                            Upcomming
                                         </div>
                                         <div className='contentRight'>
-                                            content
+                                            WIP
                                         </div>
                                     </div>
                                 </div>

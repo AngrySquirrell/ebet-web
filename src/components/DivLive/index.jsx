@@ -12,7 +12,6 @@ const DivLive = (props) => {
     const config = {
         headers: {
             "Access-Control-Allow-Origin": "*",
-            'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8;application/json'
         }  
     }
 

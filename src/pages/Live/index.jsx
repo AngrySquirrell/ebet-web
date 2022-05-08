@@ -18,7 +18,6 @@ const Live = () => {
     const config = {
         headers: {
             "Access-Control-Allow-Origin": "*",
-            'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8;application/json'
         }  
     }
 
@@ -36,7 +35,7 @@ const Live = () => {
     }
 
     const getTournamentList = (selected) => {
-        axios.get(`http://109.205.56.69:4000/live/:${selected}/:50/:30`, config)
+        axios.get(`http://109.205.56.69:4000/live/:${selected}/:50/:30`)
             .then((response) => {
                 setMatchsData({ name: [], players: [], odds: [] });
                 console.log(response.data)
