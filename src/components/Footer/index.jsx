@@ -1,11 +1,12 @@
 import React from "react";
 import './Footer.css';
 
-const Footer = () => {
+const Footer = (props) => {
+    const { specialText } = props;
     return (
         <div>
             <div className='footer'>
-                footé
+                {specialText}
             </div>
         </div>
     )

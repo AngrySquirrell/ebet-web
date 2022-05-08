@@ -18,16 +18,36 @@ const Live = () => {
 
     function getQueryVariable(variable) {
         var query = window.location.search.substring(1);
-        console.log(query)//"app=article&act=news_content&aid=160990"
+        //console.log(query)//"app=article&act=news_content&aid=160990"
         var vars = query.split("&");
-        console.log(vars) //[ 'app=article', 'act=news_content', 'aid=160990' ]
+        //console.log(vars) //[ 'app=article', 'act=news_content', 'aid=160990' ]
         for (var i = 0; i < vars.length; i++) {
             var pair = vars[i].split("=");
-            console.log(pair)//[ 'app', 'article' ][ 'act', 'news_content' ][ 'aid', '160990' ] 
+            //console.log(pair)//[ 'app', 'article' ][ 'act', 'news_content' ][ 'aid', '160990' ] 
             if (pair[0] === variable) { return pair[1]; }
         }
         return (false);
     }
+
+    const getTournamentList = (selected) => {
+        axios.get(`http://109.205.56.69:4000/live/:${selected}/:50/:30`)
+            .then((response) => {
+                setMatchsData({ name: [], players: [], odds: [] });
+                console.log(response.data)
+                let name = [];
+                let players = [];
+                let odds = [];
+                response.data.slugSport.tournamentList.map((element, index) => {
+                    name.push(element.name);
+                    players.push(element.fixtureList[0].data.competitors);
+                    //odds.push(element.fixtureList[0].groups[0].templates[0].markets[0]);
+                    return ''
+                });
+                setMatchsData({ name: name, players: players, odds: odds });
+                console.log(matchsData)
+            });
+    }
+
     let selected = getQueryVariable('sport');
 
     useEffect(() => {
@@ -39,27 +59,11 @@ const Live = () => {
             .catch(err => {
                 console.log(err);
             })
+
         console.clear()
-
-        let selected = getQueryVariable('sport');
-
-        axios.get(`http://109.205.56.69:4000/live/:${selected}/:50/:30`)
-            .then((response) => {
-                console.log(response.data)
-                let name = [];
-                let players = [];
-                let odds = [];
-                response.data.slugSport.tournamentList.map((element, index) => {
-                    name.push(element.name);
-                    players.push(element.fixtureList[0].data.competitors);
-                    odds.push(element.fixtureList[0].groups[0].markets[0]);
-                    return ''
-                });
-                setMatchsData({ name: name, players: players, odds: odds });
-            });
-    }, [])
-
-
+        console.log(getQueryVariable('sport'))
+        if (selected !== false) {getTournamentList(selected)}
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     const makeDivNameLive = (name, amount, selectedSport) => {
         switch (name) {
@@ -205,7 +209,7 @@ const Live = () => {
                     {
                         live.map(element => {
                             return (
-                                <Link className='sportLiveButtons' to={`/live?sport=${element[0]}`} onClick={() => selected = getQueryVariable('sport')}>
+                                <Link className='sportLiveButtons' to={`/live?sport=${element[0]}`} onClick={() => getTournamentList(element[0])}>
                                     {makeDivNameLive(element[0], element[1], selected)}
                                 </Link>
                             )
@@ -217,13 +221,13 @@ const Live = () => {
                         {matchsData.name.map((element, index) => {
                             return (
                                 <div className="match">
-                                    <div className="match-name">
+                                    <div key={element+index} className="match-name">
                                         {element}
                                     </div>
                                     <div className="match-players">
                                         {matchsData.players[index].map((element, index) => {
                                             return (
-                                                <div className="player">
+                                                <div key={element+index} className="player">
                                                     {element.name}
                                                 </div>
                                             )
@@ -237,7 +241,7 @@ const Live = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer specialText="If you see an amount of matches bigger than displayed, it means there is more than one match in a specific tournament. Sorry for that bug, it's just too annoying to fix :)"/>
         </div>
     )
 }
