@@ -5,10 +5,13 @@ import axios from 'axios';
 const DivLeaderboard = (props) => {
     const {pos} = props
     const [leaderboard, SetLeaderboard] = useState([])
+    const config = {
+        headers: {"Access-Control-Allow-Origin": "*"} 
+    }
 
     useEffect(() => {
         // Traitement de Live
-        axios.get(`http://109.205.56.69:4000/leaderboard`)
+        axios.get(`http://109.205.56.69:4000/leaderboard`, config)
             .then(res => {
                 console.log(res.data);
                 SetLeaderboard(res.data)
@@ -17,7 +20,7 @@ const DivLeaderboard = (props) => {
                 console.log(err);
             })
         console.clear()
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     return (
         <div className='boxes'>

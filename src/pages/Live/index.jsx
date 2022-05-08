@@ -12,9 +12,12 @@ import Footer from '../../components/Footer';
 
 
 const Live = () => {
-
+    
     const [live, SetLive] = useState([])
     const [matchsData, setMatchsData] = useState({ name: [], players: [], odds: [] });
+    const config = {
+        headers: {"Access-Control-Allow-Origin": "*"} 
+    }
 
     function getQueryVariable(variable) {
         var query = window.location.search.substring(1);
@@ -30,7 +33,7 @@ const Live = () => {
     }
 
     const getTournamentList = (selected) => {
-        axios.get(`http://109.205.56.69:4000/live/:${selected}/:50/:30`)
+        axios.get(`http://109.205.56.69:4000/live/:${selected}/:50/:30`, config)
             .then((response) => {
                 setMatchsData({ name: [], players: [], odds: [] });
                 console.log(response.data)
@@ -52,7 +55,7 @@ const Live = () => {
 
     useEffect(() => {
         // Traitement de Live
-        axios.get(`http://109.205.56.69:4000/livecount`)
+        axios.get(`http://109.205.56.69:4000/livecount`, config)
             .then(res => {
                 SetLive(res.data.sportList.map(element => [element.slug, element.fixtureCount]))
             })

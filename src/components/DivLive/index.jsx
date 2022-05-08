@@ -9,10 +9,13 @@ import { faCircle, faFutbol, faTableTennis, faBasketball, faPersonRifle, faFootb
 const DivLive = (props) => {
     const {pos} = props
     const [live, SetLive] = useState([])
+    const config = {
+        headers: {"Access-Control-Allow-Origin": "*"} 
+    }
 
     useEffect(() => {
         // Traitement de Live
-        axios.get(`http://109.205.56.69:4000/livecount`)
+        axios.get(`http://109.205.56.69:4000/livecount`, config)
             .then(res => {
                 SetLive(res.data.sportList.map(element => [element.slug, element.fixtureCount]))
             })
@@ -20,7 +23,7 @@ const DivLive = (props) => {
                 console.log(err);
             })
         console.clear()
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     const madeDivName = (name, amount) => {
         switch (name) {
