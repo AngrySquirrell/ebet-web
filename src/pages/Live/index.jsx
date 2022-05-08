@@ -16,7 +16,10 @@ const Live = () => {
     const [live, SetLive] = useState([])
     const [matchsData, setMatchsData] = useState({ name: [], players: [], odds: [] });
     const config = {
-        headers: {"Access-Control-Allow-Origin": "*"} 
+        headers: {
+            "Access-Control-Allow-Origin": "*",
+            'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8;application/json'
+        }  
     }
 
     function getQueryVariable(variable) {

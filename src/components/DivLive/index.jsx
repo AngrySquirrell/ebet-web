@@ -10,7 +10,10 @@ const DivLive = (props) => {
     const {pos} = props
     const [live, SetLive] = useState([])
     const config = {
-        headers: {"Access-Control-Allow-Origin": "*"} 
+        headers: {
+            "Access-Control-Allow-Origin": "*",
+            'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8;application/json'
+        }  
     }
 
     useEffect(() => {
