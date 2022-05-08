@@ -20,19 +20,17 @@
 
 .line-1{
     position: relative;
-    top: 50%;  
-    width: 24em;
-    margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    transform: translateY(-50%);  
+    margin-left:96px;
+
 }
 
 .aboutUs{
-    margin-top:48px;
+    margin-top:96px;
     height:calc(100vh - 48px);
     font-family: 'Anonymous Pro', monospace;
 }
@@ -40,8 +38,6 @@
     font-size:64px;
     font-weight:bold;
     color:orangered;
-    top:5%;
-    left:-20%;
     height:64px;
     width:100%;
 }
@@ -55,9 +51,9 @@
 .contentAboutUs{
     display: flex;
     color: #3d5589;
-    margin-left : 16px;
+    margin-left : 32px;
     margin-top:12px;
-    margin-bottom: 12px;
+    margin-bottom: 32px;
 }
 .contentDo{
     display: flex;
